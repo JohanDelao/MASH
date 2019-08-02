@@ -23,14 +23,14 @@ function getHome(){
 
 function getChildrenCount(){;
     let number=Math.random();
-    let number1= number * 101;
+    let number1= number * 11;
     let random = Math.floor(number1);
-    let random1= Math.floor(Math.random() * 2) + 1
-    if(random1 ==2){
-      return process.argv[3]
-    } else if(random1==1){
+    //let random1= Math.floor(Math.random() * 2) + 1
+    //if(random1 ==2){
+      //return process.argv[3]
+    //} else if(random1==1){
         return random
-    }
+    //}
 }
 
 function getCar(){
@@ -39,4 +39,4 @@ function getCar(){
     let picker = Math.random() * vehicles.length;
     let integer2 = Math.floor(picker)
     return vehicles[integer2]
-}
+};
